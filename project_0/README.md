@@ -9,7 +9,7 @@
 [5. Result](https://github.com/Psevdopolughirnikot/sf_data_science/tree/main/project_0/README.md#Result)
 [6. Findings](https://github.com/Psevdopolughirnikot/sf_data_science/tree/main/project_0/README.md#Findings)
 
-### Description of the progect
+### Description of the progect 
 Guess the number guessed by the computer in the minimum number of attempts.
 
 :arrow_up:[to the table of contents]((https://github.com/Psevdopolughirnikot/sf_data_science/tree/main/project_0/README.md#Table-of-contents)
