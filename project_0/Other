@@ -1,7 +1,29 @@
+from collections import defaultdict
 from collections import deque
 
-def brackets(line):
-    dq = deque(line)
-    print(dq)
-line = ())))((()))
-print(brackets(line))
+def task_manager(tasks):
+  
+  dict_importantness = defaultdict(deque)
+  for number_task, name_site, importantness in tasks:
+    if importantness == True:
+      dict_importantness[name_site].appendleft(number_task)
+      
+    else:
+      dict_importantness[name_site].append(number_task)
+  
+  
+  return dict_importantness  
+      
+    
+    
+ 
+
+tasks = [(36871, 'office', False),
+(40690, 'office', False),
+(35364, 'voltage', False),
+(41667, 'voltage', True),
+(33850, 'office', False)]
+
+print(task_manager(tasks))
+# defaultdict(, {'voltage': deque([41667, 35364]),
+# 'office': deque([36871, 40690, 33850])})
