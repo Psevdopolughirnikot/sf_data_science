@@ -1,0 +1,7 @@
+from collections import deque
+
+def brackets(line):
+    dq = deque(line)
+    print(dq)
+line = ())))((()))
+print(brackets(line))
