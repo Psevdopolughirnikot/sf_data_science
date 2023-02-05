@@ -1,0 +1,19 @@
+import numpy as np
+
+arr = np.array([1,5,2,9,10], dtype=np.int8)
+nd_arr = np.array([
+               [12, 45, 78],
+               [34, 56, 13],
+               [12, 98, 76]
+               ], dtype=np.int16)
+print(arr.ndim, nd_arr.ndim)
+print(arr.size, nd_arr.size)
+print(arr.itemsize, nd_arr.itemsize)
+zero_1d = np.zeros(5)
+zero_3d = np.zeros((5, 4, 3), dtype=np.float32)
+print(zero_1d)
+print(zero_3d)
+print(np.arange(0, 5, 0.1))
+np_linspase, step = np.linspace(-6, 21, 60, endpoint=False, retstep=True)
+print(np_linspase)
+print(step)
