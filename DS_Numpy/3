@@ -1,7 +1,8 @@
 import numpy as np
-data = np.array([4, 9, -4, 3])
-roots = np.sqrt(data)
-print(roots)
-print(np.isnan(roots))
-roots[np.isnan(roots)] = 0
-print(roots)
+def get_chess(*a):
+    array_qdr = np.zeros((*a, *a), dtype=np.int32)
+    array_qdr[1::2, ::2] = 1
+    array_qdr[::2, 1::2] = 1
+    return array_qdr
+
+print(get_chess(4))
